@@ -6,7 +6,8 @@
     "postcss-cli": "^12.0.0",
     "postcss-import": "^17.0.0"
   },
-  "scripts": {
-    "build": "postcss main.css --output dist/styles.css"
-  }
+ "scripts": {
+    "build": "postcss main.css --output dist/styles.css",
+    "watch": "postcss main.css --output dist/styles.css --watch"
+}
 }
