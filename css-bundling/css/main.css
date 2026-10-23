@@ -19,3 +19,5 @@
 @import url('utilities/utilities.css') layer(utilities);
 
 @import url('components/theme-toggle.css') layer(components);
+
+@import url(css/components/effects.css)
