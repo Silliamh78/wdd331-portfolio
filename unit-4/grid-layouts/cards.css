@@ -1,0 +1,7 @@
+/* In cards.css, write the CSS to make .articles-page .card-grid a fully responsive card grid. Requirements:
+
+Cards must be at least 240px wide and grow to fill available space equally.
+The grid must never overflow its container at any viewport width. Use the min() safety pattern inside minmax().
+Each .card must display its image placeholder and body content in a column arrangement. The first div in each card (the placeholder) should have a fixed height. All visual styling uses your existing token system.
+The read-more link at the bottom of each card must be pushed to the bottom of the card regardless of how much text the card above it contains. Solve this with CSS only.
+The last requirement means cards of different heights still need their links aligned at the bottom. There is more than one way to solve this. The approach you choose is worth reflecting on in your report. */

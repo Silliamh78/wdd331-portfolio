@@ -1,0 +1,7 @@
+/* In editorial.css, write the CSS to lay out .editorial-page .layout using grid-template-areas. Requirements:
+
+On small screens, the main content and sidebar stack in a single column.
+On wider screens (your choice of breakpoint), the layout switches to two columns with the sidebar on the right at a fixed width of your choosing.
+Use grid-template-areas for the responsive switch. Area names, column definitions, gap, and all visual styling are your own design decisions using your existing token system.
+The page header and footer sit outside .layout and are styled independently.
+The nav inside the header contains links that should sit on one line. Think about whether that internal arrangement calls for Grid or Flexbox and be ready to explain your choice in the report. */
