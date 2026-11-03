@@ -21,3 +21,11 @@ The page header and footer sit outside .layout and are styled independently. */
         grid-template-columns: 1fr 250px;
     }
 };
+
+.editorial-page .layout > main {
+  grid-area: main;
+}
+
+.editorial-page .layout > aside {
+  grid-area: sidebar;
+}
