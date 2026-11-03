@@ -1,0 +1,26 @@
+/* Cards must be at least 240px wide and grow to fill available space equally.
+The grid must never overflow its container at any viewport width. Use the min() safety pattern inside minmax().
+Each .card must display its image placeholder and body content in a column arrangement. The first div in each card (the placeholder) should have a fixed height. All visual styling uses your existing token system.
+The read-more link at the bottom of each card must be pushed to the bottom of the card regardless of how much text the card above it contains. Solve this with CSS only. */
+
+.card {
+    display: flex;
+    flex-direction: column;
+    min-width: 240px;
+    flex: 1 1 240px;
+}
+
+.card > div:first-child {
+    height: 200px; /* Fixed height for the image placeholder */
+}
+
+.card > div:last-child {
+    display: flex;
+    flex-direction: column;
+    flex: 1;
+}
+
+.card > div:last-child a {
+    margin-top: auto; /* Push the read-more link to the bottom */
+}
+
