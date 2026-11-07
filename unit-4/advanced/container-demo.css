@@ -1,0 +1,10 @@
+.wrapper {
+    container-type: inline-size;
+}
+
+@container (min-width: 600px) {
+    .wrapper {
+        display: flex;
+        flex-direction: row;
+    }
+}
