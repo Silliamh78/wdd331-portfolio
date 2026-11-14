@@ -1,0 +1,18 @@
+/* This layout looks correct but will break if .content has long text */
+.sidebar-layout {
+    display: flex;
+}
+
+.sidebar {
+    flex: 0 0 240px; /* fixed width sidebar */
+}
+
+.content {
+    flex: 1; /* should fill remaining space */
+    min-width: 0; /* prevents long text from expanding the flex item */
+}
+
+.content {
+    flex: 1;
+    min-width: 0; /* allow the item to shrink past its content minimum */
+}
