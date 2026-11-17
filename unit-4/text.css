@@ -1,0 +1,60 @@
+h1, h2, h3 {
+    text-wrap: balance;
+}
+
+/* used for headings 
+
+balance is way more precise than pretty, but due to the high cost of the precision,
+it's limited to short text */
+
+p {
+    text-wrap: pretty;
+}
+/* used for body copy;
+
+only considers the end of the text, making it much less costly,
+and more effective for longer text*/
+
+p::first-letter {
+    -webkit-initial-letter: 3;
+    initial-letter: 3;
+}
+
+/* used for drop caps */
+
+.card {
+    max-width: 300px; /* Forces the text to wrap past 3 lines */
+    padding: 1rem;
+    border: 1px solid #ccc;
+    margin-block-start: 2rlh;
+}
+
+.card-description {
+    display: -webkit-box;
+    -webkit-box-orient: vertical;
+    -webkit-line-clamp: 3;
+    line-clamp: 3; /* Removes the yellow linter warning in VS Code */
+    overflow: hidden;
+}
+
+/* used to clamp text to line count */
+
+article p {
+    max-width: 65ch;
+}
+
+p {
+    margin-block-end: 1lh;
+}
+
+h2 {
+    margin-block-start: 2rlh;
+}
+
+
+/* The difference between text-wrap: balance for headings and pretty for body copy, and why balance is limited to short text
+How initial-letter creates a drop cap, the meaning of its line values, and why both the prefixed and unprefixed declarations are needed
+The four-declaration line-clamp pattern and what each declaration contributes, demonstrated by truncating a real card description
+What ch measures and why it controls measure well in proportional fonts but only equals exact character count in monospace
+How lh and rlh keep a stack of text blocks on a consistent vertical rhythm, and the difference between the two
+Your own demo on your portfolio: at least one text property and one font-relative unit applied to real content */
