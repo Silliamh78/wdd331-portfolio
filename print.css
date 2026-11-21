@@ -1,0 +1,15 @@
+@media print {
+    body {
+        color: black;
+        background-color: white;
+    }
+}
+/* 
+hide navigation and any interactive chrome that has no purpose on paper, switch to a print-appropriate typeface and size in pt, surface link URLs with ::after so they are visible on the printed page, use break-inside: avoid to keep experience entries from splitting across pages, and set orphans and widows so no single line sits alone at the top or bottom of a sheet.
+
+If your resume includes a brand header or section dividers where the background color carries meaning, use print-color-adjust: exact on those specific elements so the color survives printing. Apply it only where the color is genuinely meaningful, not to every element.
+
+Test in print preview in at least two browsers. The submission report asks for a screenshot of both the screen version and the print preview so you can compare them side by side.
+*/
+
+
