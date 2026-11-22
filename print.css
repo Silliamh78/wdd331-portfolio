@@ -2,11 +2,13 @@
     body {
         color: black;
         background-color: white;
+         font-family: Georgia, 'Times New Roman', serif;
         font-size: 12pt;
-        font-family: Arial, sans-serif;
-        line-height: 1.5;
-        orphans: 3;
-        widows: 3;
+        line-height: 1.4;
+        max-width: 45em;
+        margin: 0 auto;
+        color: #000;
+        print-color-adjust: exact;
     }
      footer,
     .site-header,
@@ -14,6 +16,38 @@
     button,
     aside {
         display: none;
+    }
+
+        a[href]::after {
+        content: " (" attr(href) ")";
+        font-size: 0.9em;
+        color: #555;}
+
+         a[href^="/"]::after,
+    a[href^="#"]::after {
+        content: none;
+    }
+
+    .brand-header {
+        print-color-adjust: exact;
+        -webkit-print-color-adjust: exact;
+        background: #006eb6;
+        color: #fff;}
+
+        figure,
+    blockquote,
+    pre,
+    .card {
+        break-inside: avoid;
+    }
+
+     h2 {
+        break-before: page;
+        break-after: avoid;
+    }
+    p {
+        orphans: 3;
+        widows: 3;
     }
 }
 /* 
@@ -23,5 +57,3 @@ If your resume includes a brand header or section dividers where the background 
 
 Test in print preview in at least two browsers. The submission report asks for a screenshot of both the screen version and the print preview so you can compare them side by side.
 */
-
-
